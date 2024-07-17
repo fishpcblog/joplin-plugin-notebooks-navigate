@@ -1,0 +1,15 @@
+{
+	"manifest_version": 1,
+	"id": "com.sgitm.NotebooksNavigate",
+	"app_min_version": "2.13",
+	"version": "1.0.0",
+	"name": "NotebookNavigate",
+	"description": "Notebook Navigate from Current opend Note",
+	"author": "joe",
+	"homepage_url": "",
+	"repository_url": "",
+	"keywords": ["NoteBook","Navigate"],
+	"categories": ["editor","productivity"],
+	"screenshots": [],
+	"icons": {}
+}
