@@ -26,7 +26,7 @@ Click the editor icon to insert the notebook path in the note.
 Please click Tools> Options >  on the left select NoteBook nav,you can edit NoteBok prefix.
 
 
-![Notebook prefix set.gif]https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/screenshot/Notebook%20prefix%20set.gif)
+![Notebook prefix set.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/screenshot/Notebook%20prefix%20set.gif)
 
 
 # Keyboard Shortcut
