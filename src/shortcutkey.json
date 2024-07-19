@@ -1,0 +1,6 @@
+[
+  {
+    "command": "insertNotebookPath",
+    "accelerator": "Alt+Shift+P"
+  }
+]

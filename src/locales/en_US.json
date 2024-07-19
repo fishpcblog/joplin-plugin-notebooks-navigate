@@ -1,0 +1,14 @@
+{
+"setting-noteBookNavSection": "Notebook nav",
+"setting-noteBookPrefix": "NoteBookPrefix",
+"setting-noteBookPrefix-Descr": "The current note is in the root NotebookPrefix",
+"setting-subNotebookPrefix": "SubNoteBookPrefix",
+"setting-subNotebookPrefix-Descr": "The current note is in the subNoteBookPrefix",
+"setting-currentNoteBookPrefix": "SubNoteBookPrefix",
+"setting-currentNoteBook-Descr": "The current note is in the NoteBookPrefix",
+"editToolbar-focusNotebook": "Focus  to the  Notebook list on opend",
+"editToolbar-focusNote": "Focus to the  Note list on opened",
+"editToolbar-insertNotebookPath": "Insert NotebookPath"
+
+
+}

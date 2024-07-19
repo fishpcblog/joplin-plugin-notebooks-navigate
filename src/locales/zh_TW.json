@@ -1,0 +1,15 @@
+{
+    "setting-noteBookNavSection": "筆記本導覽",
+    "setting-noteBookPrefix": "父筆記本前綴",
+    "setting-noteBookPrefix-Descr": "目前開啟筆記的父筆記本前綴",
+    "setting-subNotebookPrefix": "子筆記本前綴",
+    "setting-subNotebookPrefix-Descr": "目前開啟筆記的子筆記本前綴",
+    "setting-currentNoteBookPrefix": "目前筆記本前綴",
+    "setting-currentNoteBook-Descr": "目前開啟筆記本前綴",
+    "editToolbar-focusNotebook": "移動焦點到目前開啟的筆記本",
+    "editToolbar-focusNote": "移動焦點到目前開啟的筆記",
+    "editToolbar-insertNotebookPath": "插入筆記本路徑"
+    
+    
+    }
+    

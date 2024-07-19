@@ -1,11 +1,16 @@
 import joplin from 'api';
 import {  ToolbarButtonLocation, SettingItemType } from 'api/types'
+import { I18n } from "i18n";
+import * as path from "path";
+let i18n:any;
 joplin.plugins.register({
 	onStart: async function() {
 		// eslint-disable-next-line no-console
 		console.info('Hello world. Test plugin started!');
+		await localelang();
+		
 		await joplin.settings.registerSection('notebookNavSetting', {
-			label: 'Notebook nav',
+			label: i18n.__("setting-noteBookNavSection"),
 			iconName: 'fas fa-route',
 		});
 		await joplin.settings.registerSettings({
@@ -13,31 +18,31 @@ joplin.plugins.register({
 				value:"NoteBook ",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 				type:SettingItemType.String,
 				section:'notebookNavSetting',
-				description:'NoteBookPrefix',
+				description:i18n.__("setting-noteBookPrefix-Descr"),
 				public:true,
-				label:'NoteBookPrefix',
+				label:i18n.__("setting-noteBookPrefix"),
 			},
 			'subNoteBookPrefixId':{
 				value:" SubNoteBook ",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 				type:SettingItemType.String,
 				section:'notebookNavSetting',
-				description:'The current note is in the subNoteBookPrefix',
+				description:i18n.__("setting-subNotebookPrefix-Descr"),
 				public:true,
-				label:'SubNoteBookPrefix',
+				label:i18n.__("setting-subNotebookPrefix"),
 			},
 			'currentNoteBookPrefixId':{
 				value:" Current NoteBook ",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 				type:SettingItemType.String,
 				section:'notebookNavSetting',
-				description:'The current note is in the NoteBookPrefix',
+				description:i18n.__("setting-currentNoteBook-Descr"),
 				public:true,
-				label:'CurrentNoteBookPrefix',
+				label:i18n.__("setting-currentNoteBookPrefix"),
 			}
 		});
 
 		  await joplin.commands.register({
 			name: 'insertNotebookPath',
-			label: 'InsertNotebookPath',
+			label: i18n.__("editToolbar-insertNotebookPath"),
 			iconName: 'fas fa-route',
 			execute: async () => {
 						//	const selectFolder = await joplin.workspace.selectedNoteIds();
@@ -86,13 +91,29 @@ joplin.plugins.register({
 
 			}
 		  });
+		  await joplin.commands.register({
+			name: 'focusNotebook',
+			label:i18n.__("editToolbar-focusNotebook"),
+			iconName: 'fas fa-book',
+			execute: async () => {
+					await joplin.commands.execute('focusElementSideBar');
 
+			}
+			});
+			await joplin.commands.register({
+				name: 'focusNote',
+				label: i18n.__("editToolbar-focusNote"),
+				iconName: 'fas fa-compress-arrows-alt',
+				execute: async () => {
+						await joplin.commands.execute('focusElementNoteList');
 
-	  
-		  await joplin.views.toolbarButtons.create('focusNotebookToolbar', 'focusElementSideBar', ToolbarButtonLocation.EditorToolbar);
-		  await joplin.views.toolbarButtons.create('focusNoteToolbar', 'focusElementNoteList', ToolbarButtonLocation.EditorToolbar);
+	
+				}
+				});
+
+		  await joplin.views.toolbarButtons.create('focusNotebookToolbar', 'focusNotebook', ToolbarButtonLocation.EditorToolbar);
+		  await joplin.views.toolbarButtons.create('focusNoteToolbar', 'focusNote', ToolbarButtonLocation.EditorToolbar);
 		  await joplin.views.toolbarButtons.create('insertNotebookPathButton', 'insertNotebookPath', ToolbarButtonLocation.EditorToolbar);
-
 
 
 
@@ -100,3 +121,17 @@ joplin.plugins.register({
 
 	},
 });
+ async function localelang() {
+    const joplinLocale = await joplin.settings.globalValue("locale");
+    const pluginDir = await joplin.plugins.installationDir();
+
+    i18n = new I18n({
+      locales: ["en_US","zh_TW"],
+      defaultLocale: "en_US",
+      fallbacks: { "en_*": "en_US" },
+	  retryInDefaultLocale: false,
+      syncFiles: true,
+      directory: path.join(pluginDir, "locales"),
+    });
+    i18n.setLocale(joplinLocale);
+  }
