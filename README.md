@@ -17,18 +17,18 @@ Focus:Sidebar is Joplin's built-in settings,it shortcut key Ctrl+Shift+S ，I se
 Focus:Note list  is Jplin's built-in settings,it shortcut key Ctrl+Shift+L
 I set button on the editor toolbar.
 
-![focus Notelist.gif](:/c08f36d9ca0d4cb9b369b6818aa5a2ce)
+![focus Notelist.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/gif/focus%20Notelist.gif)
 
 ## Input Notebook Path
 點擊編輯器圖示，可以在筆記插入筆記本路徑
 Click the editor icon to insert the notebook path in the note.
-![InputNotebookPath.gif](:/0e1c7bd9a85b4330bd76209b8b5354c1)
+![InputNotebookPath.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/gif/InputNotebookPath.gif)
 # Setting
 Please click Tools> Options >  on the left select NoteBook nav
 you can edit NoteBok prefix
 
 
-![Notebook prefix set.gif](:/f72aba99be6541f7888c4245277cb039)
+![Notebook prefix set.gif]https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/gif/Notebook%20prefix%20set.gif)
 
 
 # Keyboard Shortcut
