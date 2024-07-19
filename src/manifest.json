@@ -7,7 +7,7 @@
 	"description": "Notebook Navigate from Current opend Note",
 	"author": "joe",
 	"homepage_url": "",
-	"repository_url": "",
+	"repository_url": "https://github.com/fishpcblog/joplin-plugin-notebooks-navigate",
 	"keywords": ["NoteBook","Navigate"],
 	"categories": ["editor","productivity"],
 	"screenshots": [],

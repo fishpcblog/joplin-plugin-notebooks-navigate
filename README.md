@@ -37,3 +37,5 @@ Alt+Shift+P is Insert NotebookPath
 
 [shortcut key](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/src/shortcutkey.json)
 
+## Blog
+[vocus](https://vocus.cc/user/@fishpcinfo)
