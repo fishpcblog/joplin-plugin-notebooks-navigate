@@ -2,7 +2,7 @@
 # Install
 Please click Tools> Options > on the left select Plugins > input NotebookNavigate> Click Install.
 # Usage
-## Focas Notebook
+## Focus Notebook
 Focus:Sidebar is Joplin's built-in settings,it shortcut key Ctrl+Shift+S ,I set button on the editor toolbar.
 
 
@@ -13,7 +13,7 @@ Focus:Sidebar is Joplin's built-in settings,it shortcut key Ctrl+Shift+S ,I set 
 
 
 
-## Focas Notelist
+## Focus Notelist
 Focus:Note list  is Jplin's built-in settings,it shortcut key Ctrl+Shift+L,I set button on the editor toolbar.
 
 ![focus Notelist.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/screenshot/focus%20Notelist.gif)
@@ -21,7 +21,7 @@ Focus:Note list  is Jplin's built-in settings,it shortcut key Ctrl+Shift+L,I set
 ## Input Notebook Path
 點擊編輯器圖示，可以在筆記插入筆記本路徑
 Click the editor icon to insert the notebook path in the note.
-![InputNotebookPath.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/gif/InputNotebookPath.gif)
+![InputNotebookPath.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/main/screenshot/InputNotebookPath.gif)
 # Setting
 Please click Tools> Options >  on the left select NoteBook nav,you can edit NoteBok prefix.
 
