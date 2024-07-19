@@ -9,7 +9,7 @@ Focus:Sidebar is Joplin's built-in settings,it shortcut key Ctrl+Shift+S ，I se
 ![Joplin Focus shortcut .png](:/4ea2e249d6254332a64c90a61edd549a)
 
 
-![focus sidebar.gif](:/441211b52c044f2aaea9b60be7ff4810)
+![focus sidebar.gif](https://github.com/fishpcblog/joplin-plugin-notebooks-navigate/blob/29b9b73caf580e6a66b0446d6eae8786b002f149/gif/focus%20sidebar.gif)
 
 
 
